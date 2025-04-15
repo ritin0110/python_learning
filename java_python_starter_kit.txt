@@ -1,0 +1,123 @@
+# NO semicolon after line of code (different than Java)
+# Code is written in '.py' files
+
+# hash is used for comment line	(Java: // comment line)
+
+# syntax of print statement (Java: System.out.println)
+print("hello world")
+# below will print given string 10 times, Not available in Java
+print("*" * 10) 
+
+# syntax of declaring variables
+# int, float, boolean, string
+# bool is True or False, no other case accepted
+my_name = "ritin chhabra"
+status = False
+
+# function to find length
+len(my_name)
+
+# multi line string can be written like a mail (not available in java)
+# use three double-quotes
+mail = """
+This is the mail body
+Multiple lines in python
+Thanks
+"""
+
+# use index to print letter from strings
+print(my_name[2]) => t
+print(my_name[2:5]) => tin
+print(my_name[-1]) => a
+
+# statement to format and print strings
+output = f"(x={variable_x), name={my_name})"
+
+# important string functions available
+strip, rstrip, lstrip, upper, lower, title, find, replace, in, not in
+
+# falsy values in python=> 0, "", None
+# conversions can be done like below
+int("2")
+bool(0)
+type(x)  # print type of variable
+
+# number operators example below
+10/3 = 3.3333333
+10 // 3 = 3 	# different than java
+10 * 3 = 30
+10 ** 3 = 1000 	# makes it power to number
+
+# take console input from user
+# pass string to prompt user or empty can be used
+name = input("Name: ")
+
+# EXAMPLE of IF condition (Different than Java)
+if <condition>: 	# ENDS WITH COLON
+    <four white spaces on every line>
+    <second line of code>
+elif <new condition>:	# ENDS WITH COLON
+    <code>		# add multiple elif
+else:
+    <no condition match code>
+<out of IF block code>
+
+# TERNARY OPERATOR EXAMPLE (Java: a>10 ? "abc" : "xyz")
+message = "abc" if a>10 else "xyz"
+
+# CONDITION OPERATORS
+a and b 		#Java: a && b
+a or b 			#Java: a || b
+a not(condition) b 	#Java: a !(condition) b
+
+# EXAMPLE of FOR LOOP
+# range is in built function to run n times
+for i in range(3): 	# ENDS WITH COLON
+ <four white spaces on every line>
+ <second line of code>
+# optionally else can be added (Different than Java)
+else:
+ <only excecutes when for completes without break>
+
+# range(1,4)
+# range(1,10,2) - 2 is step
+
+#iterate strings: for x in "ritin":
+# iterate for arrays: for i in [1,2,3]
+
+# EXAMPLE OF WHILE LOOP
+while number > 0:
+ <four white spaces on every line>
+ <second line of code>
+ number -= 1
+
+# FUNCTIONS IN PYTHON
+
+def function_name():
+ <four white spaces on every line>
+ <second line of code>
+ <without return value>
+
+# with params and return value
+def function_name(param):
+ return value;
+
+# if no return value,
+# every function returns 'None' by default
+
+# default value of input param
+def function_name(name="ritin")
+
+def increment(number, by=1):
+ return number + by
+
+#default value in function making it optional
+increment(3)
+increment(3, 2)
+
+# varargs in param (format is different than Java)
+def multiply(*numbers):
+
+# syntax of writing files
+file = open("abc.txt", "w")
+file.write(message)
